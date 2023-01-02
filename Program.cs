@@ -6,6 +6,7 @@ namespace ConsoleApp
     {
         public static void Main(string[] args)
         {
+<<<<<<< Updated upstream
             int [,] Tableau = new int [1,2];
             int [,,] Tableau1 = new int [5,2,3];
 
@@ -19,6 +20,29 @@ namespace ConsoleApp
                     }
                 }
                 Console.WriteLine();
+=======
+            Random aleatoire = new Random();
+            int NbADeviner = aleatoire.Next(1, 101);
+
+            int reponse;
+            do
+            {
+                WriteLine("Devine le nombre entre 1 et 100");
+                reponse = Convert.ToInt32(ReadLine());
+
+                if (reponse > NbADeviner)
+                {
+                    WriteLine("C'est plus petit");
+                }
+                else if (reponse < NbADeviner)
+                {
+                    WriteLine("C'est plus grand");
+                }
+            } 
+            while (reponse != NbADeviner);
+            {
+                WriteLine("Bravo ! Tu as trouvé la bonne réponse.");
+>>>>>>> Stashed changes
             }
         }
 
