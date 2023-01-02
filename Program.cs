@@ -6,6 +6,7 @@ namespace ConsoleApp
     {
         public static void Main(string[] args)
         {
+<<<<<<< Updated upstream
             int [,] Tableau = new int [1,2];
             int [,,] Tableau1 = new int [5,2,3];
 
@@ -19,6 +20,15 @@ namespace ConsoleApp
                     }
                 }
                 Console.WriteLine();
+=======
+            WriteLine("Choisi un nomrbe");
+            int Nombre = Convert.ToInt32(ReadLine());
+
+            for (int i = 1; i < 12; i++)
+            {
+                int Resultat = Nombre * i;
+                WriteLine($"{Nombre} * {i} = {Resultat}");
+>>>>>>> Stashed changes
             }
         }
 
