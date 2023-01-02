@@ -6,6 +6,7 @@ namespace ConsoleApp
     {
         public static void Main(string[] args)
         {
+<<<<<<< Updated upstream
             int [,] Tableau = new int [1,2];
             int [,,] Tableau1 = new int [5,2,3];
 
@@ -19,6 +20,18 @@ namespace ConsoleApp
                     }
                 }
                 Console.WriteLine();
+=======
+            WriteLine("Quelle est ta note ?");
+            int Note = Convert.ToInt32(ReadLine());
+
+            if (Note > 60)
+            {
+                System.Console.WriteLine("Pass !");
+            }
+            else
+            {
+                System.Console.WriteLine("Fail");
+>>>>>>> Stashed changes
             }
         }
 
