@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace ConsoleApp
 {
@@ -10,23 +11,23 @@ namespace ConsoleApp
             int NbADeviner = aleatoire.Next(1, 101);
 
             int reponse;
+            WriteLine("Devine le nombre entre 1 et 100");
             do
             {
-                WriteLine("Devine le nombre entre 1 et 100");
                 reponse = Convert.ToInt32(ReadLine());
 
                 if (reponse > NbADeviner)
                 {
-                    WriteLine("C'est plus petit");
+                    WriteLine("Incorrect, try again. C'est plus petit");
                 }
                 else if (reponse < NbADeviner)
                 {
-                    WriteLine("C'est plus grand");
+                    WriteLine("Incorrect, try again. C'est plus grand");
                 }
             } 
             while (reponse != NbADeviner);
             {
-                WriteLine("Bravo ! Tu as trouvé la bonne réponse.");
+                WriteLine("Correct!");
             }
         }
     }
